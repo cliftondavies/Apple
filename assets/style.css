@@ -1,0 +1,32 @@
+/* Page Wrapper */
+.wrapper {
+  display: grid;
+  max-height: 905px;
+  grid-template-rows: 7fr 2fr 1fr;
+  grid-template-areas:
+    "top"
+    "image-list"
+    "footer"
+}
+
+/* Page Top */
+.top {
+  grid-area: top;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+}
+
+/* Page Middle */
+.image-list {
+  grid-area: image-list;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.image-list img {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+}
