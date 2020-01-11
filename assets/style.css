@@ -12,7 +12,29 @@
 /* Page Top */
 .top {
   grid-area: top;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+}
+
+.nav {
+  border: 1px solid red;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.nav-list > * {
+  border: 1px solid green;
+}
+
+.header {
+  border: 1px solid orange;
 }
 
 /* Page Middle */
