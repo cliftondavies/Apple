@@ -25,6 +25,7 @@
   justify-items: center;
 }
 
+/* Page Top Nav Bar */
 .nav {
   /* border: 1px solid red; */
   /* height: 36px; */
@@ -102,8 +103,26 @@ input[type="search"]:focus {
   color: whitesmoke;
 }
 
+/* Page Top Header */
 .header {
   border: 1px solid orange;
+}
+
+.film {
+  position: relative;
+  height: 34px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.film:hover::after {
+  position: absolute;
+  left: 221px;
+  content: "";
+  display: block;
+  width: 51%;
+  border-bottom: 1px solid white;
+  margin-top: -41px;
 }
 
 /* Page Middle */
