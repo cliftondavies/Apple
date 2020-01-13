@@ -95,6 +95,11 @@ input[type="search"]:focus {
 }
 
 /* Page Top Header */
+.header h1 {
+  height: 100px;
+  overflow: hidden;
+}
+
 .film {
   position: relative;
   height: 34px;
