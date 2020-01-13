@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@
   grid-template-areas:
     "top"
     "image-list"
-    "footer"
+    "footer";
 }
 
 /* Page Top */
@@ -27,16 +27,14 @@
 }
 
 /* Page Top Nav Bar */
-.nav {
-  align-self: end;
-}
+.nav { align-self: end; }
 
 .nav-list {
   display: grid;
   grid-template-columns: repeat(8, 105px) 132px;
   border-radius: 4px;
   background: -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
-  box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
 }
 
 .nav-list > * {
@@ -44,9 +42,7 @@
   border-right: 1px solid #666;
 }
 
-.nav-list > *:last-child {
-  position: relative;
-}
+.nav-list > *:last-child { position: relative; }
 
 .nav-list a {
   display: block;
@@ -60,13 +56,9 @@
   color: white;
 }
 
-.nav-list a:hover {
-  background-color: rgb(0,0,0,0.4);
-}
+.nav-list a:hover { background-color: rgb(0, 0, 0, 0.4); }
 
-.nav-list span {
-  display: block;
-}
+.nav-list span { display: block; }
 
 input[type="search"] {
   width: 85%;
@@ -79,13 +71,9 @@ input[type="search"] {
   box-shadow: 0 2px 1px 1px #333 inset;
 }
 
-input[type="search"]:focus {
-  background: white;
-}
+input[type="search"]:focus { background: white; }
 
-.fa-apple {
-  color: whitesmoke;
-}
+.fa-apple { color: whitesmoke; }
 
 .fa-search {
   position: absolute;
@@ -125,9 +113,7 @@ input[type="search"]:focus {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.image-list img {
-  width: 100%;
-}
+.image-list img { width: 100%; }
 
 /* Page Footer */
 .footer {
@@ -140,9 +126,7 @@ input[type="search"]:focus {
   color: #6e6e6e;
 }
 
-.footer p:first-child {
-  align-self: center;
-}
+.footer p:first-child { align-self: center; }
 
 .footer-links {
   display: grid;
@@ -154,19 +138,15 @@ input[type="search"]:focus {
 }
 
 .footer-links > * {
-  border-right: .5px solid #ccc;
+  border-right: 0.5px solid #ccc;
   padding-right: 5px;
 }
 
-.footer-links li:last-child {
-  border-right: none;
-}
+.footer-links li:last-child { border-right: none; }
 
 .footer a {
   color: #08c;
   text-decoration: none;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
+.footer a:hover { text-decoration: underline; }
