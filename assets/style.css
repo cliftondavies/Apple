@@ -8,7 +8,8 @@
 .wrapper {
   display: grid;
   max-height: 905px;
-  grid-template-rows: 7fr 2fr 1fr;
+  grid-gap: 2px;
+  grid-template-rows: 5.3fr 2fr 90px;
   grid-template-areas:
     "top"
     "image-list"
@@ -27,17 +28,12 @@
 
 /* Page Top Nav Bar */
 .nav {
-  /* border: 1px solid red; */
-  /* height: 36px; */
   align-self: end;
 }
 
 .nav-list {
   display: grid;
   grid-template-columns: repeat(8, 105px) 132px;
-  /* justify-items: center;
-  align-items: center; */
-  /* border: 1px solid blue; */
   border-radius: 4px;
   background: -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
   box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
@@ -45,8 +41,6 @@
 
 .nav-list > * {
   display: grid;
-  /* border: 1px solid green; */
-  /* background: white; */
   border-right: 1px solid #666;
 }
 
@@ -55,7 +49,6 @@
 }
 
 .nav-list a {
-  /* border: 1px solid red; */
   display: block;
   display: grid;
   justify-items: center;
@@ -79,8 +72,6 @@ input[type="search"] {
   width: 85%;
   justify-self: center;
   align-self: center;
-  /* margin: 0;
-  padding: 0; */
   height: 23px;
   border: 0.1px solid #666;
   border-radius: 12px;
@@ -104,10 +95,6 @@ input[type="search"]:focus {
 }
 
 /* Page Top Header */
-.header {
-  border: 1px solid orange;
-}
-
 .film {
   position: relative;
   height: 34px;
@@ -129,6 +116,7 @@ input[type="search"]:focus {
 .image-list {
   grid-area: image-list;
   display: grid;
+  grid-gap: 2px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -136,8 +124,44 @@ input[type="search"]:focus {
   width: 100%;
 }
 
-/* Footer */
+/* Page Footer */
 .footer {
   grid-area: footer;
-  border: 1px solid red;
+  width: 980px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  font-size: 9px;
+  color: #6e6e6e;
+}
+
+.footer p:first-child {
+  align-self: center;
+}
+
+.footer-links {
+  display: grid;
+  justify-self: end;
+  align-self: center;
+  grid-template-columns: repeat(8, auto);
+  grid-column-gap: 5px;
+  align-items: center;
+}
+
+.footer-links > * {
+  border-right: .5px solid #ccc;
+  padding-right: 5px;
+}
+
+.footer-links li:last-child {
+  border-right: none;
+}
+
+.footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
