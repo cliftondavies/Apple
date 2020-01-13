@@ -1,12 +1,12 @@
 # Apple
 
-> To make a clone of old an old version of the [Apple website](https://web.archive.org/web/20140301004610/http://www.apple.com/).
+> To make a clone of an old version of the [Apple website](https://web.archive.org/web/20140301004610/http://www.apple.com/).
 
 ![screenshot](assets/images/screenshot.png)
 
 ## Project Implementation
 
-# Content & Structure
+### Content & Structure
 
 The webpage is divided into three parts (Top, Middle and Bottom), which are then enclosed within a Page Wrapper.
 
@@ -16,9 +16,9 @@ Similar to the nav bar within the Top, the Middle is built with a list of fours 
 
 Finally, the Bottom/Footer contains small prints, structured with a couple of paragraphs, and a list of footer links.
 
-# Layout & Presentation
+### Layout & Presentation
 
-CSS Grid is solely employed for the layout and alignment of this project.
+CSS Grid is solely employed for the layout and alignment of this webpage.
 
 For the Page Wrapper, a grid with three rows is created to position the three main areas - Top, Middle and Bottom/Footer.
 
