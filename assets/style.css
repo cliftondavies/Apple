@@ -1,0 +1,153 @@
+/* Box Model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Page Wrapper */
+.wrapper {
+  display: grid;
+  max-height: 905px;
+  grid-gap: 2px;
+  grid-template-rows: 5.3fr 2fr 90px;
+  grid-template-areas:
+    "top"
+    "image-list"
+    "footer";
+}
+
+/* Page Top */
+.top {
+  grid-area: top;
+  display: grid;
+  grid-gap: 27px;
+  grid-template-rows: 120px 1fr;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  justify-items: center;
+}
+
+/* Page Top Nav Bar */
+.nav { align-self: end; }
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 105px) 132px;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+}
+
+.nav-list > * {
+  display: grid;
+  border-right: 1px solid #666;
+}
+
+.nav-list > *:last-child { position: relative; }
+
+.nav-list a {
+  display: block;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 6px 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list a:hover { background-color: rgb(0, 0, 0, 0.4); }
+
+.nav-list span { display: block; }
+
+input[type="search"] {
+  width: 85%;
+  justify-self: center;
+  align-self: center;
+  height: 23px;
+  border: 0.1px solid #666;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  box-shadow: 0 2px 1px 1px #333 inset;
+}
+
+input[type="search"]:focus { background: white; }
+
+.fa-apple { color: whitesmoke; }
+
+.fa-search {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  color: whitesmoke;
+}
+
+/* Page Top Header */
+.header h1 {
+  height: 100px;
+  overflow: hidden;
+}
+
+.film {
+  position: relative;
+  height: 34px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.film:hover::after {
+  position: absolute;
+  left: 221px;
+  content: "";
+  display: block;
+  width: 51%;
+  border-bottom: 1px solid white;
+  margin-top: -41px;
+}
+
+/* Page Middle */
+.image-list {
+  grid-area: image-list;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.image-list img { width: 100%; }
+
+/* Page Footer */
+.footer {
+  grid-area: footer;
+  width: 980px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  font-size: 9px;
+  color: #6e6e6e;
+}
+
+.footer p:first-child { align-self: center; }
+
+.footer-links {
+  display: grid;
+  justify-self: end;
+  align-self: center;
+  grid-template-columns: repeat(8, auto);
+  grid-column-gap: 5px;
+  align-items: center;
+}
+
+.footer-links > * {
+  border-right: 0.5px solid #ccc;
+  padding-right: 5px;
+}
+
+.footer-links li:last-child { border-right: none; }
+
+.footer a {
+  color: #08c;
+  text-decoration: none;
+}
+
+.footer a:hover { text-decoration: underline; }
