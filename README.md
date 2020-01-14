@@ -35,7 +35,7 @@ The Bottom/Footer is justified center. Thereafter, it is also defined as an auto
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cliftondavies/Apple/feature/apple-page/index.html)
+[Live Demo Link](https://cliftondavies.github.io/Apple/)
 
 ## Authors
 
